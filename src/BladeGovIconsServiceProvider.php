@@ -19,7 +19,6 @@ final class BladeGovIconsServiceProvider extends ServiceProvider
 
             $factory->add('gov-icons', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
         });
-
     }
 
     private function registerConfig(): void
@@ -39,5 +38,4 @@ final class BladeGovIconsServiceProvider extends ServiceProvider
             ], 'blade-govicons-config');
         }
     }
-
 }

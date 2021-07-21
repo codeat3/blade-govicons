@@ -18,7 +18,7 @@ class CompilesIconsTest extends TestCase
 
         // Note: the empty class here seems to be a Blade components bug.
         $expected = <<<'SVG'
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 56" fill="currentColor"><title>book</title><path d="M55.94,9.12V48.94H19.19a3.07,3.07,0,0,1,0-6.13H52.88V3H19.19a6.13,6.13,0,0,0-6.13,6.12V45.87A6.13,6.13,0,0,0,19.19,52H59V9.12Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 72 56" fill="currentColor"><title>book</title><path d="M55.94,9.12V48.94H19.19a3.07,3.07,0,0,1,0-6.13H52.88V3H19.19a6.13,6.13,0,0,0-6.13,6.12V45.87A6.13,6.13,0,0,0,19.19,52H59V9.12Z"/></svg>
             SVG;
 
 
@@ -30,7 +30,7 @@ class CompilesIconsTest extends TestCase
     {
         $result = svg('govicon-book', 'w-6 h-6 text-gray-500')->toHtml();
         $expected = <<<'SVG'
-            <svg class="w-6 h-6 text-gray-500" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 56" fill="currentColor"><title>book</title><path d="M55.94,9.12V48.94H19.19a3.07,3.07,0,0,1,0-6.13H52.88V3H19.19a6.13,6.13,0,0,0-6.13,6.12V45.87A6.13,6.13,0,0,0,19.19,52H59V9.12Z"/></svg>
+            <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 72 56" fill="currentColor"><title>book</title><path d="M55.94,9.12V48.94H19.19a3.07,3.07,0,0,1,0-6.13H52.88V3H19.19a6.13,6.13,0,0,0-6.13,6.12V45.87A6.13,6.13,0,0,0,19.19,52H59V9.12Z"/></svg>
             SVG;
         $this->assertSame($expected, $result);
     }
@@ -42,7 +42,7 @@ class CompilesIconsTest extends TestCase
 
 
         $expected = <<<'SVG'
-            <svg style="color: #555" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 56" fill="currentColor"><title>book</title><path d="M55.94,9.12V48.94H19.19a3.07,3.07,0,0,1,0-6.13H52.88V3H19.19a6.13,6.13,0,0,0-6.13,6.12V45.87A6.13,6.13,0,0,0,19.19,52H59V9.12Z"/></svg>
+            <svg style="color: #555" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 72 56" fill="currentColor"><title>book</title><path d="M55.94,9.12V48.94H19.19a3.07,3.07,0,0,1,0-6.13H52.88V3H19.19a6.13,6.13,0,0,0-6.13,6.12V45.87A6.13,6.13,0,0,0,19.19,52H59V9.12Z"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);
@@ -56,7 +56,7 @@ class CompilesIconsTest extends TestCase
         $result = svg('govicon-book')->toHtml();
 
         $expected = <<<'SVG'
-            <svg class="awesome" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 56" fill="currentColor"><title>book</title><path d="M55.94,9.12V48.94H19.19a3.07,3.07,0,0,1,0-6.13H52.88V3H19.19a6.13,6.13,0,0,0-6.13,6.12V45.87A6.13,6.13,0,0,0,19.19,52H59V9.12Z"/></svg>
+            <svg class="awesome" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 72 56" fill="currentColor"><title>book</title><path d="M55.94,9.12V48.94H19.19a3.07,3.07,0,0,1,0-6.13H52.88V3H19.19a6.13,6.13,0,0,0-6.13,6.12V45.87A6.13,6.13,0,0,0,19.19,52H59V9.12Z"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);
@@ -71,7 +71,7 @@ class CompilesIconsTest extends TestCase
         $result = svg('govicon-book', 'w-6 h-6')->toHtml();
 
         $expected = <<<'SVG'
-            <svg class="awesome w-6 h-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 56" fill="currentColor"><title>book</title><path d="M55.94,9.12V48.94H19.19a3.07,3.07,0,0,1,0-6.13H52.88V3H19.19a6.13,6.13,0,0,0-6.13,6.12V45.87A6.13,6.13,0,0,0,19.19,52H59V9.12Z"/></svg>
+            <svg class="awesome w-6 h-6" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 72 56" fill="currentColor"><title>book</title><path d="M55.94,9.12V48.94H19.19a3.07,3.07,0,0,1,0-6.13H52.88V3H19.19a6.13,6.13,0,0,0-6.13,6.12V45.87A6.13,6.13,0,0,0,19.19,52H59V9.12Z"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);
